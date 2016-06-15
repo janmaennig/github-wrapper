@@ -1,0 +1,41 @@
+{
+  "name": "jan-maennig/github-wrapper",
+  "description": "Connect to GitHub",
+  "type": "library",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Jan Maennig",
+      "email": "janmaennig@gmail.com"
+    }
+  ],
+  "support": {
+    "email": "janmaennig@gmail.com",
+    "source": "http://www.jan-maennig.de"
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "tan-tan-kanarek/github-php-client": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "JanMaennig\\GitHubWrapper\\": "src/"
+    },
+    "classmap": [
+      "vendor/tan-tan-kanarek/github-php-client/source/"
+    ]
+  },
+  "autoload-dev":{
+    "psr-4":{
+      "JanMaennig\\GitHubWrapper\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.1"
+    }
+  }
+}
